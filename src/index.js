@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import Amplify from 'aws-amplify'; // <--- 追加
+import config from './aws-exports'; // <--- 追加
+Amplify.configure(config); // <--- 追加
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
